@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+body{
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/562d8d23908841.563372cd06bfc.jpg);
+    margin:7px;
+    background-attachment:fixed;
+    font-family: 'Darker Grotesque', sans-serif;
+    justify-content:center;
+    background-size: cover; 
+    display: 100vh;
+    background-repeat: no-repeat;
+    padding-bottom: 1000px;
+    
+}
+
+p{
+    font-size: 50px;
+}
+
+    .button{
+        background-color:transparent;
+        border-radius: 20px;
+        padding: 10px 24px;
+        text-align:center;
+        Color: white;
+      }
+
+     
+      
+      input {
+        display: block;
+        width: 20%;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        border: none;
+        margin-bottom: 10px;
+        color:#ff0000;
+        padding: 15px 7px 15px 7px;
+        font-size: 20px;
+    
+      }
+    
+      input[type=email]{
+      border-bottom: 2px solid #69696a;
+      margin-bottom: 20px;
+      }
+    
+     form{
+        font-family: 'VT323', monospace;
+        font-size: 25px;
+     }
+    
+     form h2{
+        color:#ff0000;
+     }
