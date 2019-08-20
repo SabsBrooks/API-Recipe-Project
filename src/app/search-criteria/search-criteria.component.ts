@@ -4,27 +4,27 @@ import { NgForm } from '@angular/forms';
 import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-search-criteria',
-  templateUrl: './search-criteria.component.html',
-  styleUrls: ['./search-criteria.component.css']
+    selector: 'app-search-criteria',
+    templateUrl: './search-criteria.component.html',
+    styleUrls: ['./search-criteria.component.css']
 })
 export class SearchCriteriaComponent implements OnInit {
-  
-  foodData: any;
 
-  constructor(private recipeService: RecipeService, router: Router) {}
+    foodData: any;
 
-  ngOnInit() {
-  }
+    constructor(private recipeService: RecipeService, router: Router) { }
 
-  getData(form: NgForm) {
-    this.recipeService.getFoodData(form.value.searchTerm).subscribe(response => {
-      console.log(response.hits);
-      this.foodData = response;
-    });
-  
-    // onSubmit(searchTerm ): void {
-    //   this.router.navigate(["submit"]);
-    // }
-  }
+    ngOnInit() {
+    }
+
+    getData(form: NgForm) {
+        this.recipeService.getFoodData(form.value.searchTerm).subscribe(response => {
+            console.log(response.hits);
+            this.foodData = response.hits;
+        });
+
+        // onSubmit(searchTerm ): void {
+        //   this.router.navigate(["submit"]);
+        // }
+    }
 }
