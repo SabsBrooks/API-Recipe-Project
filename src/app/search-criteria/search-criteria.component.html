@@ -1,4 +1,4 @@
 <form #form="ngForm" (submit)="getData(form)">
     <input type="text" name="searchTerm" ngModel>
 </form>
-<app-recipe-list [searchResults]="this.foodData"></app-recipe-list>
+<app-recipe-list [searchResults]="this.foodData" (loveEvent)="addToFavorites()"></app-recipe-list>
