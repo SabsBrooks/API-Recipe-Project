@@ -19,4 +19,8 @@ export class RecipeService {
     this.favorites.push(love);
     console.log(this.favorites);
   }
+  // removeFromFavorites(love: object) {
+  //   this.favorites.splice(love);
+  //   console.log(this.favorites);
+  // }
 }
