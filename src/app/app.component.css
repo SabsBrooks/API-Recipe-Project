@@ -1,0 +1,14 @@
+body {
+    display: flex;
+}
+
+nav-bar {
+    height: 1000px;
+    background-color: lightslategray;
+    flex-direction: column;
+    
+}
+router-outlet{
+    width: auto;
+    height: auto;
+}

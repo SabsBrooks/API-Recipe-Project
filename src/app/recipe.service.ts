@@ -12,7 +12,7 @@ export class RecipeService {
 
   getFoodData(searchTerm: string): Observable<any> {
     return this.http.get(
-      `https://api.edamam.com/search?q=${searchTerm}&app_id=f2710e02&app_key=2ab4af09bde6752755d8fda5c38e6a3e`
+      `https://api.edamam.com/search?q=${searchTerm}&app_id=f2710e02&app_key=6adff8e44e31929ebc5207d837ce5ccb`
     );
   }
   moveToFavorites(love: object) {
