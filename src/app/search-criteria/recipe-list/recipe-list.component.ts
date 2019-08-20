@@ -13,7 +13,7 @@ export class RecipeListComponent implements OnInit {
 
   ngOnInit() {}
 
-  addToFavorites(index: number) {
-    this.loveEvent.emit(index);
+  addToFavorites(favorite: object) {
+    this.loveEvent.emit(favorite);
   }
 }

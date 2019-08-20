@@ -1,5 +1,5 @@
 <h1>This is recipe-list component</h1>
-<div *ngFor="let result of searchResults; index as i">
+<div *ngFor="let result of searchResults">
   <p>{{ result.recipe.label }}</p>
-  <button (click)="addToFavorites(i)">LUV</button>
+  <button (click)="addToFavorites(result)">LUV</button>
 </div>

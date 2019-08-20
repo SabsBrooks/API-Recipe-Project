@@ -22,13 +22,9 @@ export class SearchCriteriaComponent implements OnInit {
         console.log(response.hits);
         this.foodData = response.hits;
       });
-
-    // onSubmit(searchTerm ): void {
-    //   this.router.navigate(["submit"]);
-    // }
   }
 
-  addToFavorites(index: number) {
-    this.recipeService.moveToFavorites(this.foodData[index]);
+  addToFavorites(favorite: object) {
+    this.recipeService.moveToFavorites(favorite);
   }
 }
