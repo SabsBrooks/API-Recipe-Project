@@ -19,8 +19,14 @@ export class RecipeService {
     this.favorites.push(love);
     console.log(this.favorites);
   }
+
   // removeFromFavorites(love: object) {
   //   this.favorites.splice(love);
   //   console.log(this.favorites);
   // }
+  
+  // created the method that the component will use to show the favorites list "get"
+  getFavorites(): any[] {
+    return this.favorites;
+  }
 }
