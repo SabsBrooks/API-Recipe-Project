@@ -9,8 +9,10 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { FavoritesPageComponent } from './favorites-page/favorites-page.component';
 import { HomeComponent } from './home/home.component';
 import { InvalidComponent } from './invalid/invalid.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-const appRoutes: Routes = [ 
+const appRoutes: Routes = [
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "recipe-list", component: RecipeListComponent },
   { path: "favorites", component: FavoritesPageComponent },
   { path: "home", component: HomeComponent },
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     RecipeListComponent,
     FavoritesPageComponent,
     HomeComponent,
-    InvalidComponent
+    InvalidComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule, RouterModule.forRoot(appRoutes)
