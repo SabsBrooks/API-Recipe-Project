@@ -23,4 +23,7 @@ favorites: any[] = [];
     // put this inside on ngOnInit so that this would come up on initialization of the page 
   }
 
+  removeFavorite(index: number): void {
+    this.favorites.splice(index, 1);
+  }
 }
