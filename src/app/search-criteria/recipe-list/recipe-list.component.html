@@ -1,4 +1,4 @@
-<div *ngFor="let result of searchResults">
+<div class="box" *ngFor="let result of searchResults">
   <p>{{ result.recipe.label }}</p>
   <img src="{{ result.recipe.image }}">
   <a href="{{ result.recipe.url }}" target="_blank">Recipe</a>
