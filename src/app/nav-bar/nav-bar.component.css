@@ -1,20 +1,22 @@
-nav {
-    display: inline-block;
-    padding: 70px;
+:host {
+  display: flex;
+  justify-content: center;
 }
-.links {
 
+button {
+  margin: 10px;
+  align-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px 12px;
+  text-align: center;
+  border-color: black;
+  border-width: 1px;
+  width: 75%;
+  font-size: 16px;
 }
-button{
-    background-color:transparent;
-    border-radius: 20px;
-    padding: 10px 24px;
-    text-align:center;
-    border-color:red;
-    width: 100%;
-    display: block;
-  }
 
-  a{
-      text-decoration:none;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}

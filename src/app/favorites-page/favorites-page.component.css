@@ -1,25 +1,32 @@
 i {
-    right: -10px;
-    bottom: -10px;
-    padding: 10px;
-    color: grey;
-  } 
-
-  ul {
-    list-style: none;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  padding: 10px;
+  color: grey;
+}
+:host {
+  background-image: url("../../assets/spices_home.jpg");
+  flex: 1;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-  .box {
-    border: 5px solid grey;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    text-align: center;
-  }
+ul {
+  list-style: none;
+}
 
-  button {
-    background-color: transparent;
-      border: none;
-      color: pink;
-      font-size: 30px;
-  }
+.box {
+  border: 5px solid grey;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: pink;
+  font-size: 30px;
+}
