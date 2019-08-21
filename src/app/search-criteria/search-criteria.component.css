@@ -3,4 +3,6 @@
   flex: 1;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
+  overflow-y: scroll;
 }

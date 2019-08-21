@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 })
 export class RecipeListComponent implements OnInit {
   @Input() searchResults;
-
+  @Input() excluded;
   @Output() loveEvent = new EventEmitter<any>();
 
   constructor() {}

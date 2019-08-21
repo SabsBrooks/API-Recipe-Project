@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.box {
+  /* border: 5px solid grey; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: pink;
+  font-size: 30px;
+}
