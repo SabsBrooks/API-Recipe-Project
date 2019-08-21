@@ -4,3 +4,22 @@ i {
     padding: 10px;
     color: grey;
   } 
+
+  ul {
+    list-style: none;
+}
+
+  .box {
+    border: 5px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  button {
+    background-color: transparent;
+      border: none;
+      color: pink;
+      font-size: 30px;
+  }
