@@ -17,7 +17,7 @@ export class SearchCriteriaComponent implements OnInit {
 
   getData(form: NgForm) {
     this.recipeService
-      .getFoodData(form.value.searchTerm, form.value.mealType)
+      .getFoodData(form.value.searchTerm, form.value.excluded)
       .subscribe(response => {
         console.log(response.hits);
         this.foodData = response.hits;
