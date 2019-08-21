@@ -10,10 +10,10 @@ export class RecipeService {
 
   constructor(private http: HttpClient) {}
 
-  getFoodData(searchTerm: string): Observable<any> {
-    // console.log(mealType);
+  getFoodData(searchTerm: string, excluded: string): Observable<any> {
+    console.log(excluded);
     return this.http.get(
-      `https://api.edamam.com/search?app_id=f2710e02&app_key=72248f3c2899a4f2ccfc00d0a81cde67&q=${searchTerm}`
+      `https://api.edamam.com/search?app_id=f2710e02&app_key=a8ece75c13201d27f03d0f317a189495&q=${searchTerm}&excluded=${excluded}`
     );
   }
   moveToFavorites(love: object) {
