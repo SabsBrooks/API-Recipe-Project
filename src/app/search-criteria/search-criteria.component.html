@@ -1,15 +1,11 @@
 <section>
-    <form #form="ngForm" (submit)="getData(form)">
-    <input type="text" name="searchTerm" ngModel>
-    <!-- <title>Meal Type</title>
-    <select>
-        <option value=""></option>
-        <option value="breakfast">Breakfast</option>
-        <option value="lunch">Lunch</option>
-        <option value="dinner">Dinner</option>
-        <option value="snack">Snack</option>
-    </select> -->
+    <form #form="ngForm" (ngSubmit)="getData(form)">
+        <input type="text" name="searchTerm" ngModel>
+        <!-- <input type="text" name="mealType" ngModel> -->
+        <button>Submit</button>
     </form>
 </section>
 
 <app-recipe-list [searchResults]="this.foodData" (loveEvent)="addToFavorites($event)"></app-recipe-list>
+
+<!-- [mealType]="this.foodData" -->

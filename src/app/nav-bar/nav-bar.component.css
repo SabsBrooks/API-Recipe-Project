@@ -4,3 +4,17 @@ nav {
 .links {
 
 }
+button{
+    background-color:transparent;
+    border-radius: 20px;
+    padding: 10px 24px;
+    text-align:center;
+    border-color:red;
+    border-width: 3px;  
+    width: 100%;
+    flex-direction: col
+  }
+
+  a{
+      text-decoration:none;
+  }

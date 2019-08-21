@@ -11,8 +11,9 @@ export class RecipeService {
   constructor(private http: HttpClient) {}
 
   getFoodData(searchTerm: string): Observable<any> {
+    // console.log(mealType);
     return this.http.get(
-      `https://api.edamam.com/search?q=${searchTerm}&app_id=f2710e02&app_key=6adff8e44e31929ebc5207d837ce5ccb`
+      `https://api.edamam.com/search?app_id=f2710e02&app_key=72248f3c2899a4f2ccfc00d0a81cde67&q=${searchTerm}`
     );
   }
   moveToFavorites(love: object) {
@@ -20,13 +21,14 @@ export class RecipeService {
     console.log(this.favorites);
   }
 
-  // removeFromFavorites(love: object) {
-  //   this.favorites.splice(love);
-  //   console.log(this.favorites);
-  // }
-  
-  // created the method that the component will use to show the favorites list "get"
+// created the method that the component will use to show the favorites list "get"
   getFavorites(): any[] {
     return this.favorites;
   }
 }
+
+
+// removeFromFavorites(love: object) {
+  //   this.favorites.splice(love);
+  //   console.log(this.favorites);
+  // }

@@ -1,13 +1,17 @@
 <ul>
   <!-- created this list so that each time the ngFor ran it would create a new list item -->
-  <li *ngFor="let favorite of this.favorites">
+  <li *ngFor="let favorite of this.favorites, index as i">
   <!-- ngFor is saying for each one in the favorites list call it favorite -->
     <p>{{ favorite.recipe.label }}</p>
+    <button (click)="removeFavorite(i)">X</button>
   <!-- in the curly braces this is what is showing in browser based on API terms that can be found when inspecting the element --> 
   </li>
 </ul>
 
-  <!-- <i class="far fa-trash-alt"></i> 
+<div>  
+  <i class="far fa-trash-alt"></i> 
+</div>  
 
 <!-- <button (click)= "removeFavorite(result)">Remove</button> -->
+
 
