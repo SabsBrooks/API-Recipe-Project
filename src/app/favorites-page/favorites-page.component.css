@@ -1,7 +1,13 @@
 i {
-    position: absolute;
-    right: -10px;
-    bottom: -10px;
-    padding: 10px;
-    color: grey;
-  } 
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  padding: 10px;
+  color: grey;
+}
+:host {
+  background-image: url("../../assets/spices_home.jpg");
+  flex: 1;
+  background-size: cover;
+  background-attachment: fixed;
+}
