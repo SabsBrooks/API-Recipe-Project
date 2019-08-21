@@ -1,6 +1,6 @@
 <div *ngFor="let result of searchResults">
   <p>{{ result.recipe.label }}</p>
   <img src="{{ result.recipe.image }}">
-  <a href="{{ result.recipe.url }}">click to see recipe</a>
+  <a href="{{ result.recipe.url }}" target="_blank">Recipe</a>
   <button (click)="addToFavorites(result)"><i class="fas fa-heart"></i></button>
 </div>
