@@ -1,7 +1,7 @@
 <h1>This is recipe-list component</h1>
 <div *ngFor="let result of searchResults">
-    <p>{{ result.recipe.label }}</p>
-    <img src="{{ result.recipe.image }}">
-    <a href="{{ result.recipe.url }}">click to see recipe</a>
-    <button (click)="addToFavorites(result)">LUV</button>
+  <p>{{ result.recipe.label }}</p>
+  <img src="{{ result.recipe.image }}">
+  <a href="{{ result.recipe.url }}">click to see recipe</a>
+  <button (click)="addToFavorites(result)">LUV</button>
 </div>
